@@ -323,7 +323,7 @@ function EngineRoom(){
               Your Bundle Engine Room
             </h2>
             <p className="mt-6 text-pretty text-lg/8 text-gray-300">
-            The Bocs Widget simplifies bundle management by handling both the structure and style of your bundle sign-up process. Set frequencies, discounts, and product options effortlessly, while customizing the widget's design to match your brand.
+            The Bocs Widget simplifies bundle management by handling both the structure and style of your bundle sign-up process. Set frequencies, discounts, and product options effortlessly, while customizing the widget&apos;s design to match your brand.
             </p>
           </div>
           <div className="relative mt-16 h-[14rem] lg:h-[58vh] lg:mt-8">
