@@ -43,10 +43,10 @@ function Hero() {
         />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
           <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
-            Build Recurring Revenue with Flexible Subscription Bundles
+          Build Recurring Revenue with Flexible Subscription Boxes
           </h1>
           <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            Design custom programs, offer flexible customer options, and manage subscriptions effortlessly—no developer required.
+          Design custom programs, offer flexible customer options, and manage subscriptions effortlessly—no developer required.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
             <Button href="#">Get started</Button>
@@ -63,23 +63,23 @@ function Hero() {
 function Problem() {
   const features = [
     {
-      name: 'Push to deploy',
+      name: 'Smooth, Simple, Built for Growth',
       description:
-        'Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.',
+        "Managing subscriptions shouldn't feel clunky. Bocs makes it easy with a clean interface, intuitive controls, and a seamless subscriber portal that keeps customers engaged.",
       href: '#',
       icon: CloudArrowUpIcon,
     },
     {
-      name: 'SSL certificates',
+      name: 'Powerful Tools, Endless Potential',
       description:
-        'Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis donec placerat sapien consequat tempor fermentum nibh.',
+        'Bocs gives you everything you need to build and scale subscription boxes — with powerful features today and a packed roadmap for tomorrow. One app. No clutter.',
       href: '#',
       icon: LockClosedIcon,
     },
     {
-      name: 'Simple queues',
+      name: 'Built to Convert and Retain',
       description:
-        'Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.',
+        "Bocs isn't just easier — it's smarter. Boost conversions, increase retention, and build a stronger subscriber base with tools designed for growth at every step.",
       href: '#',
       icon: ArrowPathIcon,
     },
@@ -90,10 +90,10 @@ function Problem() {
         <div className="px-6 pb-16 sm:px-6 sm:pb-24 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-balance text-4xl font-semibold tracking-tight text-black sm:text-5xl">
-              Ditch the developer and cluncky tools, control and manage your own bundle program.
+            One app. Not five+ plugins. Built to scale subscriptions
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-pretty text-lg/8 text-gray-900">
-              Clunky systems, endless plugins, and bad user experience fail to deliver the flexibility and control you need.
+            Clunky endless plugins and bad user experience fail to deliver the features, flexibility and control you and your customers need.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
@@ -138,12 +138,12 @@ function Problem() {
 
 function UsefulTools() {
   const benefits = [
-    'Easy set up in minutes',
-    'Build your own bundles',
-    'Simplified management tools',
-    'Sell cuarated or custom bundles',
-    'Smart revenue retention tools',
-    'Powerful integrations',
+    'Create curated and custom box subscriptions',
+    'Set flexible billing frequencies and pricing options',
+    'Offer one-time (roadmap) or recurring subscription box purchases',
+    'Customise box contents with upsells and add-ons (roadmap)',
+    'Launch seasonal, evergreen boxes and limited-edition (roadmap)',
+    'Manage inventory, product swaps and pricing updates',
   ]
 
   return (
@@ -158,10 +158,130 @@ function UsefulTools() {
             />
             <div className="w-full flex-auto">
               <h2 className="text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-              Easy to use tools, self manage
+              The Easiest Way to Build Subscription Boxes
               </h2>
               <p className="mt-6 text-pretty text-lg/8 text-gray-300">
-              Create, manage and optimise your own subscription bundle program. Use Bocs simplified tools to develop customisable or curated subscription bundles, no technical experience necessary.
+              Create, sell, and manage subscription boxes without limits. Bocs gives you the flexibility to offer curated and custom box options — all through a seamless experience that drives conversions, boosts retention, and keeps subscribers in control.
+              </p>
+              <ul role="list" className="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 text-base/7 text-white sm:grid-cols-2">
+                {benefits.map((benefit) => (
+                  <li key={benefit} className="flex gap-x-3">
+                    <CheckCircleIcon aria-hidden="true" className="h-7 w-5 flex-none" />
+                    {benefit}
+                  </li>
+                ))}
+              </ul>
+              {/* <div className="mt-10 flex">
+                <a href="#" className="text-sm/6 font-semibold text-indigo-400">
+                  See our job postings <span aria-hidden="true">&rarr;</span>
+                </a>
+              </div> */}
+            </div>
+          </div>
+        </div>
+        <div
+          aria-hidden="true"
+          className="absolute inset-x-0 -top-16 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
+        >
+          <div
+            style={{
+              clipPath:
+                'polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)',
+            }}
+            className="aspect-[1318/752] w-[82.375rem] flex-none bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-25"
+          />
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function TakeControl() {
+  const benefits = [
+    'Update billing, shipping, and box preferences easily',
+    'Swap products across subscriptions with a few clicks',
+    'Set reminders for expiring cards and renewals',
+    'Tag and organize subscriptions for smarter workflows',
+    'Add internal notes to subscriptions for better tracking',
+    'Pause subscriptions with custom durations',
+  ]
+
+  return (
+    <div className="bg-gray-900 py-24 sm:py-32">
+      <div className="relative isolate">
+        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="mx-auto flex max-w-2xl flex-col gap-16 bg-white/5 px-6 py-16 ring-1 ring-white/10 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20">
+            <img
+              alt=""
+              src="https://images.unsplash.com/photo-1519338381761-c7523edc1f46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+              className="h-96 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:h-auto lg:max-w-sm"
+            />
+            <div className="w-full flex-auto">
+              <h2 className="text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+              Take Control of Your Subscriptions
+              </h2>
+              <p className="mt-6 text-pretty text-lg/8 text-gray-300">
+              Manage every part of the subscription experience without the hassle. Bocs gives you powerful, flexible tools to update payment methods, swap products, manage shipping, tag and track subscriptions, and keep your customers engaged — all from one clean dashboard.
+              </p>
+              <ul role="list" className="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 text-base/7 text-white sm:grid-cols-2">
+                {benefits.map((benefit) => (
+                  <li key={benefit} className="flex gap-x-3">
+                    <CheckCircleIcon aria-hidden="true" className="h-7 w-5 flex-none" />
+                    {benefit}
+                  </li>
+                ))}
+              </ul>
+              {/* <div className="mt-10 flex">
+                <a href="#" className="text-sm/6 font-semibold text-indigo-400">
+                  See our job postings <span aria-hidden="true">&rarr;</span>
+                </a>
+              </div> */}
+            </div>
+          </div>
+        </div>
+        <div
+          aria-hidden="true"
+          className="absolute inset-x-0 -top-16 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
+        >
+          <div
+            style={{
+              clipPath:
+                'polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)',
+            }}
+            className="aspect-[1318/752] w-[82.375rem] flex-none bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-25"
+          />
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function SeamlessExperience() {
+  const benefits = [
+    'Change next payment date directly from the portal',
+    'Pause or skip upcoming renewals with ease',
+    'Swap products or change box selections anytime',
+    'Update payment methods and billing details quickly',
+    'Change subscription frequency to fit their needs',
+    'Trigger early renewals for faster reorders',
+  ]
+
+  return (
+    <div className="bg-gray-900 py-24 sm:py-32">
+      <div className="relative isolate">
+        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="mx-auto flex max-w-2xl flex-col gap-16 bg-white/5 px-6 py-16 ring-1 ring-white/10 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20">
+            <img
+              alt=""
+              src="https://images.unsplash.com/photo-1519338381761-c7523edc1f46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+              className="h-96 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:h-auto lg:max-w-sm"
+            />
+            <div className="w-full flex-auto">
+              <h2 className="text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+              Deliver a Seamless Subscription Experience
+              </h2>
+              <p className="mt-6 text-pretty text-lg/8 text-gray-300">
+              Give your subscribers the tools they expect. The Bocs customer portal makes it easy for them to manage their subscriptions — from pausing, skipping, or changing boxes, to swapping products, updating payment methods, or adjusting their next payment date — all in a few clicks.
               </p>
               <ul role="list" className="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 text-base/7 text-white sm:grid-cols-2">
                 {benefits.map((benefit) => (
@@ -283,17 +403,14 @@ function SwitchToBocs() {
             Ditch the Plugins,<br/>Switch to Bocs
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-pretty text-lg/8 text-gray-300">
-            Bocs brings feature you need to create, manage, and grow your subscription bundle program—curated or custom—on one powerful, dedicated platform.
+          Bocs brings feature you need to create, manage, and grow your subscription box program —curated or custom — on one powerful, dedicated platform.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
-              href="#"
+              href="https://v2.bocs.io/login"
               className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               Get started
-            </a>
-            <a href="#" className="text-sm/6 font-semibold text-white">
-              Learn more <span aria-hidden="true">→</span>
             </a>
           </div>
           <svg
@@ -448,18 +565,20 @@ export default function Home() {
       <Hero />
       <main>
 
-        <div className="bg-linear-to-b from-white from-50% to-gray-100 py-32">
+        <div className="bg-linear-to-b from-white from-50% to-gray-100 pt-32">
           <Problem />
           {/* <FeatureSection /> */}
           <UsefulTools/>
-          <BentoSection />
+          <TakeControl/>
+          <SeamlessExperience/>
+          {/* <BentoSection /> */}
         </div>
         <SwitchToBocs />
-        <Pricing />
+        {/* <Pricing /> */}
         {/* <DarkBentoSection /> */}
       </main>
       <Testimonials />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }

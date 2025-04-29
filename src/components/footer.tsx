@@ -12,17 +12,16 @@ function CallToAction() {
       <hgroup>
         <Subheading>Get started</Subheading>
         <p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
-          Ready to dive in?
+          Ready to scale your 
           <br />
-          Start your free trial today.
+          subscription box program?
         </p>
       </hgroup>
       <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">
-        Get the cheat codes for selling and unlock your team&apos;s revenue
-        potential.
+      Create a free account and test our demo stores or connect your store and get selling.
       </p>
       <div className="mt-6">
-        <Button className="w-full sm:w-auto" href="#">
+        <Button className="w-full sm:w-auto" href="https://v2.bocs.io/login">
           Get started
         </Button>
       </div>
