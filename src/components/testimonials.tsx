@@ -20,56 +20,56 @@ import { Heading, Subheading } from './text'
 const testimonials = [
   {
     img: '/testimonials/wineclub.jpg',
-    name: 'Tina Yards',
-    title: 'VP of Sales, Protocol',
+    name: 'Flexible Wine Clubs',
+    title: 'Let members select their own wines, how many, and when they want them.',
     quote:
       "Thanks to Radiant, wer'e finding new leads that we never would have found with legal methods.",
   },
   {
     img: '/testimonials/beer.jpg',
-    name: 'Conor Neville',
-    title: 'Head of Customer Success, TaxPal',
+    name: 'Option-Rich Beer Clubs',
+    title: 'Offer customisable packs by size and style.',
     quote:
       'Radiant made undercutting all of our competitors an absolute breeze.',
   },
   {
     img: '/testimonials/drinks.jpg',
-    name: 'Amy Chase',
-    title: 'Head of GTM, Pocket',
+    name: 'Tailored Drink Subscriptions',
+    title: 'Let customers mix juices, sodas, teas, and more in their perfect monthly box.',
     quote:
       'We closed a deal in literally a few minutes because we knew their exact budget.',
   },
   {
     img: '/testimonials/cocktail.jpg',
-    name: 'Veronica Winton',
-    title: 'CSO, Planeteria',
+    name: 'Craft Your Cocktail Club',
+    title: 'Offer mix-and-match spirits, syrups, and garnishes with flexible delivery.',
     quote:
       "We've managed to put two of our main competitors out of business in 6 months.",
   },
   {
     img: '/testimonials/meat.jpg',
-    name: 'Dillon Lenora',
-    title: 'VP of Sales, Detax',
+    name: 'Flexible Meat Boxes',
+    title: 'Let shoppers choose cuts, portions, and frequencies that suit their lifestyle.',
     quote: 'I was able to replace 80% of my team with RadiantAI bots.',
   },
   {
     img: '/testimonials/produce.jpg',
-    name: 'Harriet Arron',
-    title: 'Account Manager, Commit',
+    name: 'Seasonal Produce Picks',
+    title: 'Offer buildable fruit & veg boxes that adapt to taste and seasonality.',
     quote:
       "I've smashed all my targets without having to speak to a lead in months.",
   },
   {
     img: '/testimonials/cheese.jpg',
-    name: 'Harriet Arron',
-    title: 'Account Manager, Commit',
+    name: 'Custom Cheese Selections',
+    title: 'Let customers pick their favorite styles, strengths, and pairings.',
     quote:
       "I've smashed all my targets without having to speak to a lead in months.",
   },
   {
     img: '/testimonials/beauty.jpg',
-    name: 'Harriet Arron',
-    title: 'Account Manager, Commit',
+    name: 'Beauty Box Builder',
+    title: 'Let subscribers tailor skincare, cosmetics, and self-care routines.',
     quote:
       "I've smashed all my targets without having to speak to a lead in months.",
   },
@@ -142,7 +142,7 @@ function TestimonialCard({
         className="absolute inset-0 rounded-3xl bg-linear-to-t from-black from-[calc(7/16*100%)] ring-1 ring-gray-950/10 ring-inset sm:from-25%"
       />
       <figure className="relative p-10">
-        <blockquote>
+        {/* <blockquote>
           <p className="relative text-xl/7 text-white">
             <span aria-hidden="true" className="absolute -translate-x-full">
               “
@@ -152,7 +152,7 @@ function TestimonialCard({
               ”
             </span>
           </p>
-        </blockquote>
+        </blockquote> */}
         <figcaption className="mt-6 border-t border-white/20 pt-6">
           <p className="text-sm/6 font-medium text-white">{name}</p>
           <p className="text-sm/6 font-medium">
