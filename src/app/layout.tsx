@@ -27,7 +27,7 @@ export default function RootLayout({
           title="The Radiant Blog"
           href="/blog/feed.xml"
         />
-        <script src="https://js.navattic.com/embeds.js" async></script>
+        <script src="https://js.navattic.com/embeds.js" async></script> 
       </head>
       <body className="text-gray-950 antialiased">
         {children}
