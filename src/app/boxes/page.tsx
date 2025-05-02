@@ -9,6 +9,8 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { LifebuoyIcon, NewspaperIcon, PhoneIcon } from '@heroicons/react/20/solid'
 import { ArrowPathIcon, CloudArrowUpIcon, LockClosedIcon, FingerPrintIcon, Cog6ToothIcon, ServerIcon } from '@heroicons/react/20/solid'
 import { Industries } from '@/components/industries'
+import { Testimonials } from '@/components/testimonials'
+import BOCSDemo from '@/screenshots/Bocs_Demo.png'
 
 
 function Bundles(){
@@ -121,10 +123,10 @@ function Bundles(){
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
               <h1 className="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
-                Subscription Bundles Made Simple
+              Create Subscription Box Experiences That Drive Retention
               </h1>
               <p className="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
-                Whether curated or fully customisable, Bocs lets you take full control of your subscription bundles.
+              Whether curated or fully customisable, Bocs gives you full control of building and styling your subscription boxes.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
@@ -171,14 +173,19 @@ function Bundles(){
 function BundleTypes(){
   const cards = [
     {
-      name: 'Custom Bundles',
-      description: 'Offer a build-your-own-box experience where customers can mix and match products from your store. Give them control while you increase average order value.',
+      name: 'Curated Boxes',
+      description: 'Combine best-sellers or complementary products into ready-to-go boxes that simplify the decision-making process for your customers and boost your sales.',
       icon: PhoneIcon,
+    },
+    {
+      name: 'Custom Boxes',
+      description: 'Offer a build-your-own-box experience where customers can mix and match products from your store. Give them control while you increase average order value.',
+      icon: LifebuoyIcon,
     },
     {
       name: 'Collections',
       description: 'Combine bundles into collections offering greater choice in your signup flow. Perfect for Wine Clubs featuring packs by quantity or food boxes offering meat, seafood, or vegetarian options.',
-      icon: LifebuoyIcon,
+      icon:NewspaperIcon,
     },
   ]
 
@@ -209,12 +216,12 @@ function BundleTypes(){
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-5xl font-semibold tracking-tight text-white sm:text-7xl">Curated Bundles</h2>
+          <h2 className="text-5xl font-semibold tracking-tight text-white sm:text-7xl">Sell More Boxes</h2>
           <p className="mt-8 text-pretty text-lg font-medium text-gray-400 sm:text-xl/8">
-          Combine best-sellers or complementary products into ready-to-go bundles that simplify the decision-making process for your customers and boost your sales.
+          Create and Deploy Subscription Boxes Built for High Conversions
           </p>
         </div>
-        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:gap-8">
+        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
           {cards.map((card) => (
             <div key={card.name} className="flex gap-x-4 rounded-xl bg-white/5 p-6 ring-1 ring-inset ring-white/10">
               {/* <card.icon aria-hidden="true" className="h-7 w-5 flex-none text-indigo-400" /> */}
@@ -236,18 +243,18 @@ function StartTrial(){
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:justify-between lg:px-8">
         <h2 className="max-w-2xl text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
           Ready to dive in? <br />
-          Start your free trial today.
+          Create a free account today.
         </h2>
         <div className="mt-10 flex items-center gap-x-6 lg:mt-0 lg:shrink-0">
           <a
-            href="#"
+            href="https://v2.bocs.io/login"
             className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Get started
           </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          {/* <a href="#" className="text-sm/6 font-semibold text-gray-900">
             Learn more <span aria-hidden="true">→</span>
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
@@ -259,42 +266,42 @@ function EngineRoom(){
     {
       name: 'Layouts.',
       description:
-        'Select a visual layout of the sign up flow that best matches your brand and industry',
+        'Select a visual layout of the sign up flow that best matches your brand and industry. Adjust each widget component to your liking.',
       href: '#',
       icon: CloudArrowUpIcon,
     },
     {
       name: 'Style.',
       description:
-        'Adjust the styling of the sign up flow to match your branding.',
+        'Adjust the styling of the sign up flow to match your brand 100% adjustable styling (coming soon).',
       href: '#',
       icon: LockClosedIcon,
     },
     {
-      name: 'Simple queues.',
+      name: 'Frequencies.',
       description:
-        'Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.',
+        'Set unlimited frequency options per box and provide more options to suit your subscribers.',
       href: '#',
       icon: ArrowPathIcon,
     },
     {
-      name: 'Advanced security.',
+      name: 'Discounts.',
       description:
-        'Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.',
+        'For each frequency, set a discount either dollar value or percentage. The more frequent, the better the discount.',
       href: '#',
       icon: FingerPrintIcon,
     },
     {
-      name: 'Powerful API.',
+      name: 'Products.',
       description:
-        'Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis donec placerat sapien consequat tempor fermentum nibh.',
+        'For each box, you can set products. Create different boxes with different products such as Meat, Seafood or Vegetarian. ',
       href: '#',
       icon: Cog6ToothIcon,
     },
     {
-      name: 'Database backups.',
+      name: 'Preview.',
       description:
-        'Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.',
+        'Check the preview of your sign up flow before you publish onto your website.',
       href: '#',
       icon: ServerIcon,
     },
@@ -320,13 +327,13 @@ function EngineRoom(){
           <div className="m-auto max-w-[40rem] text-center lg:m-auto lg:pt-32 lg:pb-24 lg:text-center">
           <h2 className="text-base/7 font-semibold text-indigo-600 mb-5">Bocs Widget</h2>
             <h2 className="text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-              Your Bundle Engine Room
+            Your Subscription Box Engine Room
             </h2>
             <p className="mt-6 text-pretty text-lg/8 text-gray-300">
-            The Bocs Widget simplifies bundle management by handling both the structure and style of your bundle sign-up process. Set frequencies, discounts, and product options effortlessly, while customizing the widget&apos;s design to match your brand.
+            The Bocs Widget simplifies subscription box management by handling both the structure and style of your box sign-up process. Set frequencies, discounts, and product options effortlessly, while customising the widget's design to match your brand.
             </p>
           </div>
-          <div className="relative mt-16 h-[14rem] lg:h-[58vh] lg:mt-8">
+          {/* <div className="relative mt-16 h-[14rem] lg:h-[58vh] lg:mt-8">
             <img
               alt="App screenshot"
               src="https://tailwindui.com/plus/img/component-images/dark-project-app-screenshot.png"
@@ -334,7 +341,24 @@ function EngineRoom(){
               height={1080}
               className="absolute left-0 top-0 w-full max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
             />
-          </div>
+          </div> */}
+          <div className="has-overlay relative text-center mb-16 mx-auto max-w-7xl px-6 lg:px-8 no-gradient">
+          {/* <iframe src="https://capture.navattic.com/cm2895j8t000003mfae4999ls" className="border-none w-full h-full min-h-screen" allow="fullscreen" data-navattic-demo-id="cm2895j8t000003mfae4999ls"></iframe> */}
+          {/* <iframe src="https://capture.navattic.com/cm2895j8t000003mfae4999ls" className="full-width-widget min-h-screen" allow="fullscreen" data-navattic-demo-id="cm2895j8t000003mfae4999ls"></iframe> */}
+          
+          <button id='demo' className='z-50 -translate-x-1/2 absolute top-2/4 left-2/4 w-fit mx-auto min-w-36 bg-amber-700 group inline-flex items-center justify-center rounded-full py-2 px-4 text-lg font-semibold focus:outline-hidden focus-visible:outline-2 focus-visible:outline-offset-2 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900'>
+              <span>
+              Try our Bocs Demo
+              </span>
+            </button>
+          <img
+            alt="App screenshot"
+            src={BOCSDemo.src}
+            width={2432}
+            height={1442}
+            className="rounded-xl shadow-2xl ring-1 ring-gray-900/10"
+          />
+        </div>
         </div>
       </div>
     </div>
@@ -363,15 +387,29 @@ function EngineRoom(){
 
 function Collections(){
   return (
+    <>
     <div className="bg-white">
       <div className="mx-auto max-w-7xl px-6 pt-24 sm:pt-32 lg:items-center lg:justify-between lg:px-8">
         <h2 className="text-base/7 font-semibold text-indigo-600 mb-1">Bocs Widget</h2>
         <h2 className="max-w-2xl text-4xl font-semibold tracking-tight mb-5 text-gray-900 sm:text-5xl">
           Collections
         </h2>
-        <p className='max-w-lg text-gray-600'>Create dynamic subscription experiences by grouping bundles into tailored collections.</p>
+        <p className='max-w-lg text-gray-600'>Create dynamic subscription experiences by grouping boxes into tailored collections. Perfect for wine clubs, nutrition kits, cocktail clubs and more. </p>
       </div>
     </div>
+    <div className="overflow-hidden bg-white pb-24 sm:pb-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="relative mt-16 aspect-2432/1442 h-[36rem] sm:h-auto sm:w-[calc(var(--container-7xl)-calc(var(--spacing)*16))]">
+          <div className="absolute -inset-2 rounded-[calc(var(--radius-xl)+calc(var(--spacing)*2))] shadow-xs ring-1 ring-black/5" />
+          <img
+            alt=""
+            src="https://tailwindcss.com/plus-assets/img/component-images/project-app-screenshot.png"
+            className="h-full rounded-xl shadow-2xl ring-1 ring-black/10"
+          />
+        </div>
+      </div>
+    </div>
+  </>
   )
 }
 
@@ -388,7 +426,8 @@ export default function Pricing() {
       <StartTrial/>
       <EngineRoom/>
       <Collections/>
-      <Industries/>
+      <Testimonials/>
+      <Footer />
       {/* <Footer /> */}
     </main>
   )
