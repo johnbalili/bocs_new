@@ -11,6 +11,7 @@ import { ArrowPathIcon, CloudArrowUpIcon, LockClosedIcon, FingerPrintIcon, Cog6T
 import { Industries } from '@/components/industries'
 import { Testimonials } from '@/components/testimonials'
 import BOCSDemo from '@/screenshots/Bocs_Demo.png'
+import BOCSGIF from '@/screenshots/bocs_demo.gif'
 
 
 function Bundles(){
@@ -399,11 +400,11 @@ function Collections(){
     </div>
     <div className="overflow-hidden bg-white pb-24 sm:pb-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="relative mt-16 aspect-2432/1442 h-[36rem] sm:h-auto sm:w-[calc(var(--container-7xl)-calc(var(--spacing)*16))]">
+        <div className="relative mt-16 sm:h-auto sm:w-full">
           <div className="absolute -inset-2 rounded-[calc(var(--radius-xl)+calc(var(--spacing)*2))] shadow-xs ring-1 ring-black/5" />
           <img
             alt=""
-            src="https://tailwindcss.com/plus-assets/img/component-images/project-app-screenshot.png"
+            src={BOCSGIF.src}
             className="h-full rounded-xl shadow-2xl ring-1 ring-black/10"
           />
         </div>

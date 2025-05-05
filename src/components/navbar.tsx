@@ -4,6 +4,7 @@ import {
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
+  Label,
 } from '@headlessui/react'
 import { Bars2Icon } from '@heroicons/react/24/solid'
 import { motion } from 'framer-motion'
@@ -15,6 +16,7 @@ const links = [
   { href: '/boxes', label: 'Boxes' },
   { href: '/subscription-tools', label: 'Subscription Tools' },
   { href: '/pricing', label: 'Pricing' },
+  { href: '/analytics', label: 'Analytics'},
   // { href: '/blog', label: 'Blog' },
   // { href: '/login', label: 'Login' },
 ]
