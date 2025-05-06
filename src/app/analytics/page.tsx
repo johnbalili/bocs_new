@@ -7,6 +7,7 @@ import { Testimonials } from '@/components/testimonials'
 import { ChevronRightIcon } from '@heroicons/react/20/solid'
 import { CheckIcon } from '@heroicons/react/20/solid'
 import { FAQ } from '@/components/faqs'
+import Reports from '@/screenshots/reports.png'
 
 
 function Hero(){
@@ -33,22 +34,6 @@ function Hero(){
                 </svg>
                 <div className="mx-auto max-w-7xl px-6 pt-10 pb-24 sm:pb-32 lg:flex lg:px-8 lg:py-40">
                     <div className="mx-auto max-w-2xl lg:mx-0 lg:shrink-0 lg:pt-8">
-                        <img
-                            alt="Your Company"
-                            src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-                            className="h-11"
-                        />
-                        <div className="mt-24 sm:mt-32 lg:mt-16">
-                            <a href="#" className="inline-flex space-x-6">
-                            <span className="rounded-full bg-indigo-600/10 px-3 py-1 text-sm/6 font-semibold text-indigo-600 ring-1 ring-indigo-600/10 ring-inset">
-                                What&apos;s new
-                            </span>
-                            <span className="inline-flex items-center space-x-2 text-sm/6 font-medium text-gray-600">
-                                <span>Just shipped v1.0</span>
-                                <ChevronRightIcon aria-hidden="true" className="size-5 text-gray-400" />
-                            </span>
-                            </a>
-                        </div>
                         <h1 className="mt-10 text-5xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-7xl">
                         Powerful WooCommerce Analytics & Reporting for Subscriptions + eCommerce
                         </h1>
@@ -72,7 +57,7 @@ function Hero(){
                             <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-gray-900/10 ring-inset lg:-m-4 lg:rounded-2xl lg:p-4">
                                 <img
                                     alt="App screenshot"
-                                    src="https://tailwindcss.com/plus-assets/img/component-images/project-app-screenshot.png"
+                                    src={Reports.src}
                                     width={2432}
                                     height={1442}
                                     className="w-[76rem] rounded-md shadow-2xl ring-1 ring-gray-900/10"
@@ -186,8 +171,6 @@ function RoadMap() {
     </div>
   )
 }
-
-  
 
 export default function Pricing() {
 

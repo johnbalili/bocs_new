@@ -15,7 +15,7 @@ const links = [
   { href: '/boxes', label: 'Boxes' },
   { href: '/subscription-tools', label: 'Subscription Tools' },
   { href: '/pricing', label: 'Pricing' },
-  { href: '/analytics', label: 'Analytics'},
+  { href: '/how-it-works', label: 'How It Works'},
   // { href: '/blog', label: 'Blog' },
   // { href: '/login', label: 'Login' },
 ]

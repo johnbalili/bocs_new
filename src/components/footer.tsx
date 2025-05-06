@@ -20,9 +20,12 @@ function CallToAction() {
       <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">
       Create a free account and test our demo stores or connect your store and get selling.
       </p>
-      <div className="mt-6">
+      <div className="mt-6 flex flex-col gap-x-6 gap-y-4 sm:flex-row justify-center">
         <Button className="w-full sm:w-auto" href="https://v2.bocs.io/login">
           Get started
+        </Button>
+        <Button className="w-full sm:w-auto" variant="secondary" href=" https://book.bocs.io/#/CatchUp">
+          Talk to Sales
         </Button>
       </div>
     </div>
@@ -52,33 +55,35 @@ function Sitemap() {
   return (
     <>
       <div>
-        <SitemapHeading>Product</SitemapHeading>
+        <SitemapHeading>Platform</SitemapHeading>
         <SitemapLinks>
+          <SitemapLink href="/how-it-works">How It Works</SitemapLink>
+          <SitemapLink href="/boxes">Boxes</SitemapLink>
+          <SitemapLink href="/subscription-tools">Subscription Tools</SitemapLink>
+          <SitemapLink href="/analytics">Analytics</SitemapLink>
+        </SitemapLinks>
+      </div>
+      <div>
+        <SitemapHeading>Platform</SitemapHeading>
+        <SitemapLinks>
+          <SitemapLink href="/compare">Compare</SitemapLink>
           <SitemapLink href="/pricing">Pricing</SitemapLink>
-          <SitemapLink href="#">Analysis</SitemapLink>
-          <SitemapLink href="#">API</SitemapLink>
+          <SitemapLink href="#">Integrations (coming soon)</SitemapLink>
+          <SitemapLink href="#">Industries</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
         <SitemapHeading>Company</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="#">Careers</SitemapLink>
-          <SitemapLink href="/blog">Blog</SitemapLink>
-          <SitemapLink href="/company">Company</SitemapLink>
+          <SitemapLink href="/about-us">About Us </SitemapLink>
+          <SitemapLink href="https://news.bocs.io/">News</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
         <SitemapHeading>Support</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="#">Help center</SitemapLink>
-          <SitemapLink href="#">Community</SitemapLink>
-        </SitemapLinks>
-      </div>
-      <div>
-        <SitemapHeading>Company</SitemapHeading>
-        <SitemapLinks>
-          <SitemapLink href="#">Terms of service</SitemapLink>
-          <SitemapLink href="#">Privacy policy</SitemapLink>
+          <SitemapLink href="https://help.bocs.io/en/">Documentation</SitemapLink>
+          <SitemapLink href="#">Community (coming soon)</SitemapLink>
         </SitemapLinks>
       </div>
     </>
@@ -117,7 +122,7 @@ function SocialLinks() {
   return (
     <>
       <Link
-        href="https://facebook.com"
+        href="https://www.facebook.com/people/Bocsio/61560455296079/"
         target="_blank"
         aria-label="Visit us on Facebook"
         className="text-gray-950 data-hover:text-gray-950/75"
@@ -125,7 +130,7 @@ function SocialLinks() {
         <SocialIconFacebook className="size-4" />
       </Link>
       <Link
-        href="https://x.com"
+        href="https://x.com/Bocs_io"
         target="_blank"
         aria-label="Visit us on X"
         className="text-gray-950 data-hover:text-gray-950/75"
@@ -133,7 +138,7 @@ function SocialLinks() {
         <SocialIconX className="size-4" />
       </Link>
       <Link
-        href="https://linkedin.com"
+        href="https://www.linkedin.com/company/bocs-subscriptions"
         target="_blank"
         aria-label="Visit us on LinkedIn"
         className="text-gray-950 data-hover:text-gray-950/75"
@@ -147,7 +152,7 @@ function SocialLinks() {
 function Copyright() {
   return (
     <div className="text-sm/6 text-gray-950">
-      &copy; {new Date().getFullYear()} Radiant Inc.
+      &copy; {new Date().getFullYear()} Bocs Subscriptions.
     </div>
   )
 }
