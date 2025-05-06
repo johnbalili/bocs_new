@@ -250,7 +250,7 @@ function EffortlessSwap() {
               Effortless Product Swaps for Active Subscriptions
               </h2>
               <p className="mt-6 text-pretty text-lg/8 text-gray-300">
-              Easily update products across all active subscriptions with the Product Swap feature. Whether you're phasing out an item—like swapping an old vintage wine for a new release—or updating bulk pricing, changes are instantly applied to future boxes. Save time, reduce errors, and keep your offerings fresh without disrupting the subscriber experience.
+              Easily update products across all active subscriptions with the Product Swap feature. Whether you&apos;re phasing out an item—like swapping an old vintage wine for a new release—or updating bulk pricing, changes are instantly applied to future boxes. Save time, reduce errors, and keep your offerings fresh without disrupting the subscriber experience.
               </p>
               {/* <div className="mt-10 flex">
                 <a href="#" className="text-sm/6 font-semibold text-indigo-400">

@@ -139,7 +139,7 @@ function AddBocs() {
                 Getting Started Is Easy
                 </h2>
                 <p className="mt-6 text-pretty text-lg/8 text-gray-300">
-                Sync your store in minutes and start building your first subscription box. Whether you're testing things out or ready to launch, onboarding is simple. Use our demo data to explore Bocs or connect your live WordPress store with a guided sync that pulls in your products, orders, and customer data.
+                Sync your store in minutes and start building your first subscription box. Whether you&apos;re testing things out or ready to launch, onboarding is simple. Use our demo data to explore Bocs or connect your live WordPress store with a guided sync that pulls in your products, orders, and customer data.
                 </p>
                 <ul role="list" className="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 text-base/7 text-white sm:grid-cols-2">
                   {benefits.map((benefit) => (
