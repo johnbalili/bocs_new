@@ -45,13 +45,13 @@ function Hero() {
           Whether curated or fully customisable, Bocs gives you full control of building and styling your subscription boxes.
           </p>
           <div className="mt-10 flex items-center gap-x-6">
-            <a
+            <a rel="canonical"
               href="#"
               className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Get started
             </a>
-            <a href="#" className="text-sm/6 font-semibold text-gray-900">
+            <a rel="canonical" href="#" className="text-sm/6 font-semibold text-gray-900">
               Learn more <span aria-hidden="true">→</span>
             </a>
           </div>
@@ -124,7 +124,7 @@ function Bundles(){
           <div className="fixed inset-0 z-50" />
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
+              <a rel="canonical" href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
                 <img
                   alt=""
@@ -145,7 +145,7 @@ function Bundles(){
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
-                    <a
+                    <a rel="canonical"
                       key={item.name}
                       href={item.href}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
@@ -155,7 +155,7 @@ function Bundles(){
                   ))}
                 </div>
                 <div className="py-6">
-                  <a
+                  <a rel="canonical"
                     href="#"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                   >
@@ -191,13 +191,13 @@ function Bundles(){
               Whether curated or fully customisable, Bocs gives you full control of building and styling your subscription boxes.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
-                <a
+                <a rel="canonical"
                   href="#"
                   className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Get started
                 </a>
-                <a href="#" className="text-sm/6 font-semibold text-gray-900">
+                <a rel="canonical" href="#" className="text-sm/6 font-semibold text-gray-900">
                   Learn more <span aria-hidden="true">→</span>
                 </a>
               </div>
@@ -308,7 +308,7 @@ function StartTrial(){
           Create a free account today.
         </h2>
         <div className="mt-10 flex items-center gap-x-6 lg:mt-0 lg:shrink-0">
-          <a
+          <a rel="canonical"
             href="https://v2.bocs.io/login"
             className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >

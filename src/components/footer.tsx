@@ -57,33 +57,33 @@ function Sitemap() {
       <div>
         <SitemapHeading>Platform</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="/how-it-works">How It Works</SitemapLink>
-          <SitemapLink href="/boxes">Boxes</SitemapLink>
-          <SitemapLink href="/subscription-tools">Subscription Tools</SitemapLink>
-          <SitemapLink href="/analytics">Analytics</SitemapLink>
+          <SitemapLink rel="canonical" href="/how-it-works">How It Works</SitemapLink>
+          <SitemapLink rel="canonical"  href="/boxes">Boxes</SitemapLink>
+          <SitemapLink rel="canonical"  href="/subscription-tools">Subscription Tools</SitemapLink>
+          <SitemapLink rel="canonical"  href="/analytics">Analytics</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
         <SitemapHeading>Platform</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="/compare">Compare</SitemapLink>
-          <SitemapLink href="/pricing">Pricing</SitemapLink>
-          <SitemapLink href="#">Integrations (coming soon)</SitemapLink>
-          <SitemapLink href="#">Industries</SitemapLink>
+          <SitemapLink rel="canonical"  href="/compare">Compare</SitemapLink>
+          <SitemapLink rel="canonical"  href="/pricing">Pricing</SitemapLink>
+          <SitemapLink rel="canonical"  href="#">Integrations (coming soon)</SitemapLink>
+          <SitemapLink rel="canonical"  href="#">Industries</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
         <SitemapHeading>Company</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="/about-us">About Us </SitemapLink>
-          <SitemapLink href="https://news.bocs.io/">News</SitemapLink>
+          <SitemapLink rel="canonical"  href="/about-us">About Us </SitemapLink>
+          <SitemapLink rel="canonical"  href="https://news.bocs.io/">News</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
         <SitemapHeading>Support</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="https://help.bocs.io/en/">Documentation</SitemapLink>
-          <SitemapLink href="#">Community (coming soon)</SitemapLink>
+          <SitemapLink rel="canonical"  href="https://help.bocs.io/en/">Documentation</SitemapLink>
+          <SitemapLink rel="canonical"  href="#">Community (coming soon)</SitemapLink>
         </SitemapLinks>
       </div>
     </>

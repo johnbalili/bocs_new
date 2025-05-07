@@ -4,21 +4,19 @@ import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
 import { Gradient } from '@/components/gradient'
 import { Keyboard } from '@/components/keyboard'
-import { Link } from '@/components/link'
-import { LinkedAvatars } from '@/components/linked-avatars'
-import { LogoCloud } from '@/components/logo-cloud'
 import { LogoCluster } from '@/components/logo-cluster'
-import { LogoTimeline } from '@/components/logo-timeline'
 import { Map } from '@/components/map'
 import { Navbar } from '@/components/navbar'
 import { Screenshot } from '@/components/screenshot'
 import { Testimonials } from '@/components/testimonials'
-import { Heading, Subheading } from '@/components/text'
-import { ChevronRightIcon } from '@heroicons/react/16/solid'
+import { Heading} from '@/components/text'
 import type { Metadata } from 'next'
 import { ArrowPathIcon, CloudArrowUpIcon, LockClosedIcon } from '@heroicons/react/20/solid'
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
 import { CheckIcon } from '@heroicons/react/20/solid'
+import SubsBoxes from '@/screenshots/Subscription_boxes.png'
+import SubsManagement from '@/screenshots/Subscription_management.png'
+
 
 export const metadata: Metadata = {
   description:
@@ -39,8 +37,8 @@ function Hero() {
           Design custom programs, offer flexible customer options, and manage subscriptions effortlessly—no developer required.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="https://v2.bocs.io/login">Get started</Button>
-            <Button variant="secondary" href=" https://book.bocs.io/#/CatchUp">
+            <Button rel="canonical" href="https://v2.bocs.io/login">Get started</Button>
+            <Button rel="canonical" variant="secondary" href=" https://book.bocs.io/#/CatchUp">
               Book a Demo
             </Button>
           </div>
@@ -111,7 +109,7 @@ function Problem() {
                     <dd className="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
                       <p className="flex-auto">{feature.description}</p>
                       <p className="mt-6">
-                        <a href={feature.href} className="text-sm/6 font-semibold text-indigo-600">
+                        <a rel="canonical" href={feature.href} className="text-sm/6 font-semibold text-indigo-600">
                           Learn more <span aria-hidden="true">→</span>
                         </a>
                       </p>
@@ -143,8 +141,8 @@ function UsefulTools() {
           <div className="mx-auto flex max-w-2xl flex-col gap-16 px-6 py-16  sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-0">
             <img
               alt=""
-              src="https://images.unsplash.com/photo-1519338381761-c7523edc1f46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-              className="h-96 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:h-auto lg:max-w-sm"
+              src={SubsBoxes.src}
+              className="h-96 w-full flex-none rounded-2xl object-cover shadow-xl lg:h-auto lg:max-w-sm"
             />
             <div className="w-full flex-auto">
               <h2 className="text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">
@@ -203,8 +201,8 @@ function TakeControl() {
         <div className="mx-auto flex max-w-2xl flex-col gap-16 px-6 py-16  sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-0">
             <img
               alt=""
-              src="https://images.unsplash.com/photo-1519338381761-c7523edc1f46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-              className="h-96 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:h-auto lg:max-w-sm"
+              src={SubsManagement.src}
+              className="h-96 w-full flex-none rounded-2xl object-cover shadow-xl lg:h-auto lg:max-w-sm"
             />
             <div className="w-full flex-auto">
               <h2 className="text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">
@@ -457,7 +455,7 @@ function SwitchToBocs() {
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
-              href="https://v2.bocs.io/login"
+              rel="canonical" href="https://v2.bocs.io/login"
               className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               Get started
@@ -589,7 +587,7 @@ function Pricing() {
                 </li>
               ))}
             </ul>
-            <a
+            <a rel="canonical"
               href={tier.href}
               aria-describedby={tier.id}
               className={classNames(

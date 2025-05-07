@@ -1,0 +1,13 @@
+# 
+User-agent: 
+Allow: /
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Host
+Host: https://bocs-new.vercel.app
+
+# Sitemaps
+Sitemap: https://bocs-new.vercel.app/sitemap.xml

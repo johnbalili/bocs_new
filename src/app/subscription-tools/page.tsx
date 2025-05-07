@@ -42,13 +42,13 @@ function Hero() {
           And when you do need to step in, every tool is right where you need it—intuitive, logical, and built for efficient subscription workflows.
           </p>
           <div className="mt-10 flex items-center gap-x-6">
-            <a
+            <a rel="canonical"
               href="#"
               className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Get started
             </a>
-            <a href="#" className="text-sm/6 font-semibold text-gray-900">
+            <a rel="canonical" href="#" className="text-sm/6 font-semibold text-gray-900">
               Learn more <span aria-hidden="true">→</span>
             </a>
           </div>
@@ -220,7 +220,7 @@ function TakeControl(){
                 <dd className="mt-1 flex flex-auto flex-col text-base/7 text-gray-600">
                   <p className="flex-auto">{feature.description}</p>
                   <p className="mt-6">
-                    <a href={feature.href} className="text-sm/6 font-semibold text-indigo-600">
+                    <a rel="canonical" href={feature.href} className="text-sm/6 font-semibold text-indigo-600">
                       Learn more <span aria-hidden="true">→</span>
                     </a>
                   </p>
@@ -401,13 +401,13 @@ function StartTrial(){
           Start your free trial today.
         </h2>
         <div className="mt-10 flex items-center gap-x-6 lg:mt-0 lg:shrink-0">
-          <a
+          <a rel="canonical"
             href="#"
             className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Get started
           </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          <a rel="canonical" href="#" className="text-sm/6 font-semibold text-gray-900">
             Learn more <span aria-hidden="true">→</span>
           </a>
         </div>

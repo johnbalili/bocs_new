@@ -26,7 +26,7 @@ function DesktopNav() {
     <nav className="relative hidden lg:flex">
       {links.map(({ href, label }) => (
         <PlusGridItem key={href} className="relative flex">
-          <Link
+          <Link rel="canonical"
             href={href}
             className="flex items-center px-4 py-3 text-base font-medium text-gray-950 bg-blend-multiply data-hover:bg-black/[2.5%]"
           >
@@ -64,7 +64,7 @@ function MobileNav() {
             }}
             key={href}
           >
-            <Link href={href} className="text-base font-medium text-gray-950">
+            <Link rel="canonical" href={href} className="text-base font-medium text-gray-950">
               {label}
             </Link>
           </motion.div>
@@ -85,7 +85,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
         <PlusGridRow className="relative flex justify-between">
           <div className="relative flex gap-6">
             <PlusGridItem className="py-3">
-              <Link href="/" title="Home">
+              <Link rel="canonical" href="/" title="Home">
                 <Logo className="h-9" />
               </Link>
             </PlusGridItem>
